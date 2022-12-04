@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 28px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Dark-Blue);
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  background-color: var(--Dark-Grayish-Blue);
+  width: 95%;
+  margin: 4rem auto;
+  border-radius: 15px;
+  padding: 0.5rem;
+  position: relative;
+  min-height: 30vh;
+}
+
+#advice {
+  color: var(--Neon-Green);
+  font-size: 0.45rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-shadow: -5px 4px 10px #000;
+}
+
+#advice-id {
+  color: var(--Neon-Green);
+  font-size: 0.45rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-shadow: -5px 4px 10px #000;
+}
+
+.container blockquote {
+  color: var(--Light-Cyan);
+  font-style: 0.7rem;
+  margin: 0.8em 0.35em;
+  font-weight: 800;
+}
+
+.container blockquote::before {
+  content: open-quote;
+}
+
+.container blockquote::after {
+  content: close-quote;
+}
+
+.container .pattern {
+  margin-bottom: 1rem;
+}
+
+.container .dice {
+  padding: 1em;
+  background-color: var(--Neon-Green);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.container .dice:hover {
+  box-shadow: 0 0 25px 5px var(--Neon-Green);
+  -moz-box-shadow: 0 0 25px 5px var(--Neon-Green);
+  -webkit-box-shadow: 0 0 25px 5px var(--Neon-Green);
+  -o-box-shadow: 0 0 25px 5px var(--Neon-Green);
+}
+
+.attribution,
+.attribution p {
+  font-size: 11px;
+  text-align: center;
+  color: var(--Light-Cyan);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.attribution a {
+  color: var(--Neon-Green);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 60%;
+    margin: 13rem auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 50%;
+    margin: 5rem auto;
+  }
+}
